@@ -1,0 +1,17 @@
+<tools>
+    <tool id="script-runner" title="Script Runner">
+
+        <description>Run groovy script like a tool</description>
+        <parameters>
+            <parameter name="p_lang" title="Language" type="string" required="true" defaultValue="Groovy">
+               <values>
+                  <string>Groovy</string>
+                  <string>JavaScript</string>
+               </values>
+            </parameter> 
+            <parameter name="p_source" title="Source" type="text" required="true" width="200" height="10" />
+        </parameters>
+
+        <output  script="script-runner.groovy" type="html" />
+    </tool>
+</tools>
